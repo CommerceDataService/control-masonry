@@ -13,78 +13,74 @@ Control Masonry simplifies the process of creating control documentations by pro
 3. a script for combining the files into a single base file
 4. a pipeline for generating clean and standardized documentation
 
-## Installation & Usage
-Control Masonry runs on Node.js
+## My Cloud.gov/18F Controls/ Your Controls Documentation
+Without being combined with the standards and certifications yamls the control yamls can be use to generate readable documentation w/ gitbook, etc...
 
-##### To install requirements
-```bash
-npm install
-```
-##### Edit control files
-Individual control files are located in `/controls/systems/`. They can be expanded or edited to meet the needs of individual projects.
-
-##### To build centralized control justification file
-```
-node build_controls.js
-```
-
-##### To update control documentation
-```
-node render_controls.js
-```
-
-##### To serve documentation locally
-```
-cd docs
-./go serve
+```yaml
+## Cloudgov.yaml
+CF_UAA:
+  name: Cloud Foundry User Authentication and Authorization (UAA)
+  references:
+    - name: UAA design doc
+      url: https://asdfasdf
+    - name: Some other doc
+      url: https://boobarbazbat
+  governors:
+    - name: UAA configuration
+      url: https://pathtogitrepohead
+    - name: Live test results
+      url: https://dashboardwithupdatedtestresults
+  satisfies:
+    - standard:
+        AC-2: Description of now CF_UUA meets point control X sub mod. a
 ```
 
-For more documentation on the front-end visit [18F Guides Templates](https://github.com/18F/guides-template)
+## Standards Documentation
+```yaml
+# nist-800-53.yaml
+standards:
+  C-2:
+    name: User Access
+    description: There is an affordance for managing access by...
 
-## Control requirement justification structure
-This file explains the structure of the individual control justification files. The data is stored in Yaml format for easy management.
-
-YAML Format
+# PCI.yaml
+standards:
+  Regulation-6:
+    name: User Access PCI
+    description: There is an affordance for managing access by...
 ```
----
-control:
+
+## Certifications
+Empty yaml for creating certification documentation. Serve as a template for combining controls and standards yamls.
+```yaml
+# Fisma.yaml
+standards:
+  nist-800-53:
+    C-2:
+    C-3:
+  PCI:
+    6:
+```
+
+## Yaml output
+Centralized yaml for a specific certification, can be used to render matrix.csv, gitbook.md, ssp.docx... This is were we will be able to see if any pieces are missing.
+```yaml
+# NIST-800-53.yaml
+AC-2:
   a:
   - title: Title of control requirement justifications
     justifications:
-    - text: Text justification
-      image:
-        text: Image text
-        url: url
-      link:
-        text: URL text
-        url: url
+    - id: CF_UAA
+      name: Cloud Foundry User Authentication and Authorization (UAA)
+      narrative: Description of now CF_UUA meets point control X sub mod. a
+      references:
+        - name: UAA design doc
+          url: https://asdfasdf
+        - name: Some other doc
+          url: https://boobarbazbat
+      governors:
+        - name: UAA configuration
+          url: https://pathtogitrepohead
+        - name: Live test results
+          url: https://dashboardwithupdatedtestresults
 ```
-
-JSON format mapping
-```json
-{
-  "control": {
-    "a": [
-      {
-        "title": "Title of control requirement justifications",
-        "justifications": [
-          {
-            "text": "Text justification",
-            "image": {"text": "Image text", "url": "url"},
-            "link": {"text": "URL text", "url": "url"}
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-Markdown Format mapping
-### Control
-#### a
-- ##### Title of control requirement justifications
-  - Text justification
-  - Image Text  
-![Image text](http://dummyimage.com/300x100/ffffff/131961.jpg&text=Image+Justification)
-  - [URL text](https://18f.gsa.gov/)

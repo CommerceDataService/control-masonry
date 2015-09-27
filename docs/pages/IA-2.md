@@ -2,6 +2,7 @@
 permalink: /IA-2/
 title: IA-2 - User Identification and Authentication
 ---
+## undefined
 ### AWS User Identification and Authentication  
 * All users have individually unique identifiers to access and authenticates to the environment.  
 * 18F AWS IAM users are placed into groups based on their assigned roles and permissions.  

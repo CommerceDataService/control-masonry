@@ -3,6 +3,17 @@ var fs = require('fs'),
 
 var main_ctrl = yaml.safeLoad(fs.readFileSync(__dirname + '/controls/final_controler.yaml'));
 var config_file = yaml.safeLoad(fs.readFileSync(__dirname + '/docs/_config.yml'));
+var nist_80053_control_catalog = yaml.safeLoad(fs.readFileSync(__dirname + '/controls/80053_control_catalog.yaml'));
+
+// Function for getting NIST SP 800-53 control description 
+function get_80053_description(ctrl_key, section_key) {
+    // return "test value"
+    if (nist_80053_control_catalog[ctrl_key][section_key] !== null) {
+        return nist_80053_control_catalog[ctrl_key][section_key];
+    } else {
+        return "";
+    }
+}
 
 
 function create_markdown(ctrl_key, title) {
@@ -19,11 +30,12 @@ function prepare_justification(justification) {
     };
 };
 
-function build_documentation(control, markdown) {
+function build_documentation(control, ctrl_key, markdown) {
     var section_keys = Object.keys(control);
+    markdown += '## ' + get_80053_description(ctrl_key, 'description_intro') + '\n';
     section_keys.forEach(function(section_key) {
         if (section_keys.length > 2 && section_key !== 'name') {
-            markdown += '## ' + section_key + '  \n* * *   \n';
+            markdown += '## ' + section_key + '. ' + get_80053_description(ctrl_key, section_key) + '  \n* * *   \n';
         };
         if (section_key !== 'name' && control[section_key]) {
             control[section_key].forEach(function(element) {
@@ -42,7 +54,7 @@ function write_control(control, ctrl_key) {
     // Create the markdown file
     markdown = create_markdown(ctrl_key, control.name);
     // Add the Documentation
-    markdown = build_documentation(control, markdown);
+    markdown = build_documentation(control, ctrl_key, markdown);
     // Write control to main yaml file
     fs.writeFile(__dirname + '/docs/pages/' + ctrl_key + '.md', markdown, function(err) {
         if (err) {

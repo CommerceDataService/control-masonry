@@ -2,6 +2,7 @@
 permalink: /CM-2/
 title: CM-2 - Baseline Configurations
 ---
+## undefined
 ### AWS Baseline Configurations  
 * DevOps maintain baseline configurations for VPC, EBS, EC2 instances and AMIs. AWS CloudFormation templates help 18F maintain a strict configuration management scheme of the cloud infrastructure. If an error or misconfiguration of the infrastructure or associated security mechanism (security groups, NACLs) is detected, the administrators can analyze the current infrastructure templates; compare with previous versions, and redeploy the configurations to a known and approved state.  
 * AWS CloudFormation templates are the approved baseline for all changes to the infrastructure and simplifies provisioning and management on AWS. They provide an automated method to assess the status of an operational infrastructure against an approved baseline.  

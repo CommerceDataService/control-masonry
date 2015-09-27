@@ -2,7 +2,8 @@
 permalink: /AC-2/
 title: AC-2 - Account Management
 ---
-## a  
+## The organization&colon;
+## a. Identifies and selects the following types of information system accounts to support organizational missions/business functions&colon; [Assignment&colon; organization-defined information system account types];  
 * * *   
 ### AWS Account Management  
 * AWS accounts are managed through AWS Identity and Access Management (IAM). Only users with a need to operate the AWS management console are provided individual AWS user accounts. There are no guest/anonymous, group, or temporary user accounts in AWS. Please see the Amazon Web Services US East/West and GovCloud System Security Plan for additional information.  
@@ -23,7 +24,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F assigns account managers from the DevOps team for information system accounts  
   
-## b  
+## b. Assigns account managers for information system accounts;  
 * * *   
 ### AWS Account Management  
 * Conditions for group membership in AWS groups are based on an established need to manage the AWS environment. 18F doenst have No non-administrator accounts currently exist in AWS.  
@@ -35,7 +36,7 @@ title: AC-2 - Account Management
 ### Operating System Account (EC2) Management  
 * Conditions for group membership for EC2  and local system user accounts are based on an established need to manage servers in the Cloud Foundry environment. User group membership is restricted to the least privilege necessary for the user to accomplish his or her assigned duties.  
   
-## c  
+## c. Establishes conditions for group and role membership;  
 * * *   
 ### AWS Account Management  
 * AWS user accounts are issued only to those with an established need to manage the AWS environment. No non-administrator accounts currently exist in AWS.  
@@ -49,7 +50,7 @@ title: AC-2 - Account Management
 * Linux and/or local system user accounts are issued only to those with an established need to manage servers in the 18F AWS environment. User group membership is restricted to the least privilege necessary for the user to accomplish his or her assigned duties.  
 * 18F and GSA identify authorized users of the information system and specify access rights/privileges. 18F grants access to the information system based on - (i) a valid need-to-know/need-to-share that is determined by assigned official duties and satisfying all personnel security criteria; (ii) Intended system usage. 18F and GSA requires proper identification for requests to establish information system accounts and approves all such requests; and (iii) Organizational or mission/business function attributes.  
   
-## d  
+## d. Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;  
 * * *   
 ### AWS Account Management  
 * AWS user account creation requires approval by the managing 18F project lead and Cloud Foundry Information System Technical Point of Contact (Operating Environment). Prior to account creation users must have a signed NDA and have at least begun the GSA background investigative process.  
@@ -63,7 +64,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * All accounts will be documented within their respective information systems, detailing their group and role membership, and access authorizations. This documentation will be exported by the System Engineers and/or DevOps and archived for up to a year from the date of account creation by the managing 18F project lead and Cloud Foundry Information System Technical Point of Contact (Operating Environment) in accordance with best business and security practices.  
   
-## e  
+## e. Requires approvals by [Assignment&colon; organization-defined personnel or roles] for requests to create information system accounts;  
 * * *   
 ### AWS Account Management  
 * AWS user account establishment, activation, modification, disablement or removal requires approval by the managing 18F project lead and Cloud Foundry Information System Technical Point of Contact (Operating Environment).  
@@ -77,7 +78,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F requires approvals by the 18F project lead and 18F system owners for requests to create information system accounts.  
   
-## f  
+## f. Creates, enables, modifies, disables, and removes information system accounts in accordance with [Assignment&colon; organization-defined procedures or conditions];  
 * * *   
 ### AWS Account Management  
 * AWS Accounts will be Created, Enabled, Modified, Disabled, and Removed from AWS in accordance with policies, guidelines, requirements in NIST SP 800-37, and established by the 18F  Project Lead, and or  Cloud Foundry Information System Owner.  
@@ -92,7 +93,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F creates, enables, modifies, disables, and removes information system accounts in accordance with the 18F access control policy,  account access procedures and approvals from 18F DevOps.  
   
-## g  
+## g. Monitors the use of information system accounts;  
 * * *   
 ### AWS Account Monitoring  
 * 18F has implemented AWS CloudWatch for its account monitoring. It allows 18F to monitor AWS resources in near real-time, including Amazon EC2 instances, Amazon EBS volumes, Elastic Load Balancers, and Amazon RDS DB instances. Metrics such as CPU utilization, latency, and request counts are provided automatically for these AWS resources. It allows 18F to supply logs or custom application and system metrics, such as memory usage, transaction volumes, or error rates.  
@@ -112,7 +113,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F Monitors the use of all information system accounts  
   
-## h  
+## h. Notifies account managers&colon; (1) When accounts are no longer required; (2) When users are terminated or transferred; and (3) When individual information system usage or need-to-know changes;  
 * * *   
 ### AWS Account Management  
 * AWS user accounts will be deactivated immediately on receipt of notification of an email from the managing 18F project lead or at a future date as directed.  
@@ -129,7 +130,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * For all environments, Account Managers, the 18F Project Manager, and/or Cloud Foundry Information System Owner will be notified when accounts are no longer required, accounts are terminated or transferred, and when individual system usage or need to know changes. Notification will be achieved via electronic notification or other official means.  
   
-## i  
+## i. Authorizes access to the information system based on&colon; (1) A valid access authorization; (2) Intended system usage; and (3) Other attributes as required by the organization or associated missions/business functions;  
 * * *   
 ### AWS Account Management  
 * System access to the AWS system components is provided only to those with an established need to manage the AWS environment. No non-administrator accounts currently exist in AWS.  
@@ -147,7 +148,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F authorizes access to its information systems based on a valid access authorization from system owners and DevOps, intended system usage within the 18F network environment, and other attributes as required by the organization or associated missions/business functions  
   
-## j  
+## j. Reviews accounts for compliance with account management requirements [Assignment&colon; organization-defined frequency]; and  
 * * *   
 ### AWS Account Management  
 * User accounts will be monitored monthly and accounts will be disabled after 90 days of inactivity; this will be a manual review process every 30 days. 18F is in the process of automating this thought the use of implementing AWS OSQuery with AlienVault USM for AWS  
@@ -164,7 +165,7 @@ title: AC-2 - Account Management
 ### 18F Account Management  
 * 18F reviews user and system accounts for compliance with account management requirements at least on an annual basis.  Currently, accounts are being monitored manually on a monthly basis and programmatically within an ongoing basis.  
   
-## k  
+## k. Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.  
 * * *   
 ### AWS Account Management  
 * The root administrator AWS account password will be reset when a member of the group is removed or annually, whichever comes first.  

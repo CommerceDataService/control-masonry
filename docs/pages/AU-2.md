@@ -2,7 +2,8 @@
 permalink: /AU-2/
 title: AU-2 - Audit Events
 ---
-## a  
+## The organization&colon;
+## a. Determines that the information system is capable of auditing the following events&colon; [Assignment&colon; organization-defined auditable events];  
 * * *   
 ### AWS Auditable Events  
 * 18F has implemented AWS CloudTrail for its account monitoring. It provides visibility into user activity by recording API calls made on an AWS account. CloudTrail records important information about each API call, including the name of the API, the identity of the caller, the time of the API call, the request parameters, and the response elements returned by the AWS service. This information helps 18F track changes made to its AWS resources and to troubleshoot operational issues.  
@@ -21,7 +22,7 @@ title: AU-2 - Audit Events
 * CloudTrail publish Amazon SNS notifications when new log files are delivered for 18F staff to review upon log file delivery.  
 * 18F implements AlienVault USM for AWS to correlate all AWS audit logs for analysis and review.  
   
-## b  
+## b. Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events;  
 * * *   
 ### AWS Auditable Events  
 * All 18F Event audit logs will be made available as needed to other organizational entities for mutual support and selection of events to be audited.  
@@ -30,9 +31,9 @@ title: AU-2 - Audit Events
 * Event audit logs will be made available as needed to other organizational entities for mutual support and selection of events to be audited.  
 * This will make audit log review more effective and ensure that user activities are captured with the data that is available.  
   
-## c  
+## c. Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and  
 * * *   
-## d  
+## d. Determines that the following events are to be audited within the information system&colon; [Assignment&colon; organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event].  
 * * *   
 ### AWS Auditable Events  
 * 18F has implemented AWS CloudTrail for monitoring Amazon EC2, Amazon EBS, and Amazon VPC  that captures API calls and delivers the log files to an Amazon S3 bucket. By default, all CloudTrail  log files are encrypted by using Amazon S3 server-side encryption (SSE)  

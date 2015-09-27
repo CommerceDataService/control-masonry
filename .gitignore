@@ -1,3 +1,13 @@
+# Node
 node_modules/
 *.swp
 old/
+
+# Apple
+.DS-store
+
+# Misc
+.ruby-version
+
+# Python
+*.pyc

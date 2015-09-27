@@ -2,7 +2,8 @@
 permalink: /AU-6/
 title: AU-6 - Audit Review, Analysis, and Reporting
 ---
-## a  
+## The organization&colon;
+## a. Reviews and analyzes information system audit records [Assignment&colon; organization-defined frequency] for indications of [Assignment&colon; organization-defined inappropriate or unusual activity]; and  
 * * *   
 ### AWS Auditable Events  
 * DevOps and SecOps teams will conduct weekly manual and automated continuous audits of authorized accounts and configurations. These audits will include but are not limited to:  1. Administrative Accounts  
@@ -13,11 +14,11 @@ title: AU-6 - Audit Review, Analysis, and Reporting
  6. Elastic Block Store (EBS)  
   
   
-## b  
+## b. Reports findings to [Assignment&colon; organization-defined personnel or roles].  
 * * *   
 ### Cloud Foundry Auditable Events  
 * GSA Order CIO P 2100.1 states audit records must be reviewed frequently for signs of unauthorized activity or other security events.  
 * Cloud Foundry logs are captured in multiple tables and log files.  These will be reviewed weekly and if discovery of anomalous audit log content which appears to indicate a breach are handled according to the GSA Security Incident Handling Guide: CIO IT Security 01-02 Revision 7 (August 18, 2009) requirements.  
   
-## c  
+## c.   
 * * *   

@@ -2,7 +2,7 @@
 permalink: /AC-3/
 title: AC-3 - Access Enforcement
 ---
-## The information system enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.
+## The information system Cloud Foundry Platform as a Service enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.
 ### AWS Access Enforcement  
 * Security features within Amazon VPC include security groups, network ACLs, routing tables, and external gateways. Each of these items is complementary to providing a secure, isolated network that can be extended through selective enabling of direct Internet access or private connectivity to another network.  
 * 18F follows AWS IAM  best practices by implementing the majority of the following-  1. Create individual accounts for anyone that requires access to the AWS infrastructure or APIs or use IAM federation from enterprise identity management system 2. Use groups or roles to assign permissions to IAM users 3. Enable multi factor authentication for all IAM users 4. Use roles for applications that run on EC2 instances 5. Delegate by using roles instead of sharing credentials 6. Rotate credentials regularly.  

@@ -2,7 +2,7 @@
 permalink: /AC-2/
 title: AC-2 - Account Management
 ---
-## The organization&colon;
+## The organization GSA OCISO and Valiant Solutions&colon;
 ## a. Identifies and selects the following types of information system accounts to support organizational missions/business functions&colon; [Assignment&colon; organization-defined information system account types];  
 * * *   
 ### AWS Account Management  

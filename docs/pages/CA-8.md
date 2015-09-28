@@ -2,7 +2,7 @@
 permalink: /CA-8/
 title: CA-8 - Penetration Testing
 ---
-## undefined
+## The organization GSA OCISO and Valiant Solutions conducts penetration testing [Assignment&colon; organization-defined frequency] on [Assignment&colon; organization-defined information systems or system components].
 ### AWS/Cloud Foundry External Penetration Testing  
 * For external public facing penetration testing, 18F must request permission from AWS using the AWS Vulnerability / Penetration Testing Request Form to conduct penetration test activities against its own Virtual Private Cloud infrastructure and follow the AWS Acceptable Use Policy.  
 * Amazon requires customers to obtain authorization for penetration testing (or vulnerability assessments) both from or to their AWS resources. 1. AWS Acceptable Use Policy, http://aws.amazon.com/aup/ 2. AWS Penetration testng,  http://aws.amazon.com/security/penetration-testing/  

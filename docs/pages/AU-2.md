@@ -2,7 +2,7 @@
 permalink: /AU-2/
 title: AU-2 - Audit Events
 ---
-## The organization&colon;
+## The organization GSA OCISO and Valiant Solutions&colon;
 ## a. Determines that the information system is capable of auditing the following events&colon; [Assignment&colon; organization-defined auditable events];  
 * * *   
 ### AWS Auditable Events  

@@ -3,18 +3,23 @@ var fs = require('fs'),
 
 var main_ctrl = yaml.safeLoad(fs.readFileSync(__dirname + '/controls/final_controler.yaml'));
 var config_file = yaml.safeLoad(fs.readFileSync(__dirname + '/docs/_config.yml'));
+var project_info = yaml.safeLoad(fs.readFileSync(__dirname + '/controls/project_info.yaml'));
 var nist_80053_control_catalog = yaml.safeLoad(fs.readFileSync(__dirname + '/controls/80053_control_catalog.yaml'));
 
-// Function for getting NIST SP 800-53 control description 
 function get_80053_description(ctrl_key, section_key) {
-    // return "test value"
-    if (nist_80053_control_catalog[ctrl_key][section_key] !== null) {
-        return nist_80053_control_catalog[ctrl_key][section_key];
-    } else {
-        return "";
+    if (typeof nist_80053_control_catalog[ctrl_key] === 'undefined' || nist_80053_control_catalog[ctrl_key] === null) { return "" }
+    if (typeof nist_80053_control_catalog[ctrl_key][section_key] === 'undefined' || typeof nist_80053_control_catalog[ctrl_key][section_key] === null) { return "" }
+    desc = nist_80053_control_catalog[ctrl_key][section_key];
+    if (section_key == 'description_intro') {
+        if (typeof project_info['organization']['name'] !== 'undefined' && project_info['organization']['name'] !== null) { 
+            desc = desc.replace('The organization', 'The organization '+ project_info['organization']['name'])
+        }
+        if (typeof project_info['organization']['name'] !== 'undefined' && project_info['organization']['name'] !== null) { 
+            desc = desc.replace('The information system', 'The information system '+ project_info['project']['name'])
+        }
     }
+    return desc
 }
-
 
 function create_markdown(ctrl_key, title) {
     var markdown = '---\n';

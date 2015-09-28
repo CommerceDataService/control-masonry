@@ -2,7 +2,7 @@
 permalink: /AU-6/
 title: AU-6 - Audit Review, Analysis, and Reporting
 ---
-## The organization&colon;
+## The organization GSA OCISO and Valiant Solutions&colon;
 ## a. Reviews and analyzes information system audit records [Assignment&colon; organization-defined frequency] for indications of [Assignment&colon; organization-defined inappropriate or unusual activity]; and  
 * * *   
 ### AWS Auditable Events  
